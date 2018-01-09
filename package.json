@@ -1,7 +1,7 @@
 {
   "name": "graceful-instanceof",
   "version": "1.0.0",
-  "description": "The instanceof mechanism cross package versions.",
+  "description": "The instanceof mechanism cross package/module versions.",
   "main": "lib/index.js",
   "module": "src/index.js",
   "scripts": {
