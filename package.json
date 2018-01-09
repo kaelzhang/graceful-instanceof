@@ -22,7 +22,7 @@
   "keywords": [
     "graceful-instanceof",
     "instanceof",
-    "graceful",
+    "graceful"
   ],
   "engines": {
     "node": ">=4"
