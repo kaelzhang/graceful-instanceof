@@ -1,6 +1,6 @@
 {
   "name": "graceful-instanceof",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The instanceof mechanism cross package/module versions.",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -49,5 +49,8 @@
     "babel-register": "^6.24.1",
     "codecov": "^2.3.0",
     "nyc": "^11.1.0"
+  },
+  "dependencies": {
+    "symbol-for": "^1.0.0"
   }
 }

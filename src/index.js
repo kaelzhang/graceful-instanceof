@@ -1,15 +1,12 @@
-const symbolFor = typeof Symbol === 'function'
-  ? key => Symbol.for(`instanceof-symbol:${key}`)
-  /* istanbul ignore next */
-  : key => `@@instanceof-symbol:${key}`
+import symbol from 'symbol-for'
 
 export default key => {
-  const symbol = symbolFor(key)
+  const s = symbol.for(key + ':hasInstance')
   return {
-    is: subject => subject && subject[symbol] === true,
+    is: subject => subject && subject[s] === true,
     attach: host => {
       if (Object(host) === host) {
-        host[symbol] = true
+        host[s] = true
       }
     }
   }
